@@ -1,2 +1,2 @@
-# course-swapper
-Project for Enterprise Architecture course (CS544)
+# A RESTful Blog API
+Project for Enterprise Architecture (CS544)
