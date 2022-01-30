@@ -15,8 +15,8 @@ import java.util.List;
 public class UserServiceProxy implements IUserService {
     @Autowired
     private RestTemplate restTemplate;
-    private final String userUrl = "http://localhost:8080/users/{id}";
-    private final String usersUrl = "http://localhost:8080/users";
+    private final String userUrl = "http://localhost:8084/users/{id}";
+    private final String usersUrl = "http://localhost:8084/users";
 
     @Override
     public List<User> getAll() {

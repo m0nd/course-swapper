@@ -14,8 +14,8 @@ public class CommentServiceProxy implements ICommentService {
     @Autowired
     private RestTemplate restTemplate;
 
-    private final String commentUrl = "http://localhost:8080/comments/{id}";
-    private final String commentsUrl = "http://localhost:8080/comments";
+    private final String commentUrl = "http://localhost:8082/comments/{id}";
+    private final String commentsUrl = "http://localhost:8082/comments";
 
     @Override
     public List<Comment> getAll() {

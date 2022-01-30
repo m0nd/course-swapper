@@ -14,8 +14,8 @@ public class PostServiceProxy implements IPostService {
 
     @Autowired
     private RestTemplate restTemplate;
-    private final String postUrl = "http://localhost:8080/posts/{id}";
-    private final String postsUrl = "http://localhost:8080/posts";
+    private final String postUrl = "http://localhost:8083/posts/{id}";
+    private final String postsUrl = "http://localhost:8083/posts";
 
     @Override
     public List<Post> getAll() {
