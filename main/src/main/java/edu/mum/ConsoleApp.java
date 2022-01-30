@@ -11,14 +11,13 @@ import java.util.List;
 
 @Component
 public class ConsoleApp implements CommandLineRunner {
-    @Autowired
-    private IUserService userService;
+
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("sgiugusensidu");
-        List<User> userList = userService.getAll();
-        System.out.println(userList);
+        System.out.println("All in all");
+//        List<User> userList = userService.getAll();
+//        System.out.println(userList);
 //        User user1 = userService.getById(1L);
 //        userService.addNew(new User("Buju"));
 //        System.out.println(userService.getAll());
