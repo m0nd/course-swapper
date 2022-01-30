@@ -14,23 +14,34 @@ public class CommentService implements ICommentService {
     @Autowired
     private ICommentDao commentDao;
 
+    @Override
     public List<Comment> getAll(){
         return commentDao.findAll();
     }
 
+    @Override
     public void addComment(Comment comment){
         commentDao.save(comment);
     }
 
+    @Override
     public Comment get(Long id){
         return commentDao.findById(id).get();
     }
 
+    @Override
     public void update(Comment comment){
         commentDao.save(comment);
     }
 
+    @Override
     public void delete(Long id){
         commentDao.deleteById(id);
+    }
+
+    @Override
+    public List<Comment> getAllCommentsByAuthor(String author){
+        return commentDao.findCommentByAuthor(author);
+
     }
 }

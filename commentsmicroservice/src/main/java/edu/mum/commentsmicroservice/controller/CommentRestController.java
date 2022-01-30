@@ -40,5 +40,11 @@ public class CommentRestController {
         commentService.delete(id);
     }
 
+    @GetMapping("/comments/author/{author}")
+    public List<Comment> getAllCommentsByAuthor(@PathVariable String author) {
+        return commentService.getAllCommentsByAuthor(author);
+
+    }
+
 
 }
