@@ -1,4 +1,4 @@
-package edu.mum;
+package edu.mum.users.services;
 
 import edu.mum.users.domain.User;
 import edu.mum.users.services.IUserService;
