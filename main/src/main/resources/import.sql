@@ -1,6 +1,6 @@
-insert into user values(null, "James");
-insert into user values(null, "Vanny");
-insert into user values(null, "Lucy");
+insert into user(id, name) values(null, "James");
+insert into user(id, name) values(null, "Vanny");
+insert into user(id, name) values(null, "Lucy");
 insert into post values(null, "James", "I really like green eggs and ham", "Green eggs and ham");
 insert into post values(null, "Vanny", "Relax, and count on our team", "Customer Service");
 insert into post values(null, "Lucy", "Install the free online tool to make life better", "Online Ads");
