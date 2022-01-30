@@ -1,8 +1,7 @@
-package edu.mum.comments.controllers;
+package edu.mum.comments.controller;
 
 import edu.mum.comments.domain.Comment;
-import edu.mum.comments.services.ICommentService;
-import org.springframework.beans.factory.annotation.Autowired;
+import edu.mum.comments.service.ICommentService;
 import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;

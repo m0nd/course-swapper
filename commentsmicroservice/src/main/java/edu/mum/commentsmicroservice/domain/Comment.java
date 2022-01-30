@@ -1,4 +1,4 @@
-package edu.mum.commentsmicroservice;
+package edu.mum.commentsmicroservice.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

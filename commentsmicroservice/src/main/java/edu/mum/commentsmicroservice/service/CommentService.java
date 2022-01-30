@@ -1,5 +1,7 @@
-package edu.mum.commentsmicroservice;
+package edu.mum.commentsmicroservice.service;
 
+import edu.mum.commentsmicroservice.repository.ICommentDao;
+import edu.mum.commentsmicroservice.domain.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -8,7 +10,7 @@ import java.util.List;
 
 @Service
 @Transactional
-public class CommentService implements ICommentService{
+public class CommentService implements ICommentService {
     @Autowired
     private ICommentDao commentDao;
 
