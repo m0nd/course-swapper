@@ -1,3 +1,3 @@
-insert into comment values(null, "Fatie","This is nice");
-insert into comment values(null, "Tom","Already");
-insert into comment values(null, "Fatie","Calling");
+insert into comment values(null, "Lucy", 1, "This is nice");
+insert into comment values(null, "James", 1, "Already");
+insert into comment values(null, "James", 2, "Jojo");

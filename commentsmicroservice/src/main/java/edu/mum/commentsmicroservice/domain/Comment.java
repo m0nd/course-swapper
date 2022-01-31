@@ -19,6 +19,7 @@ public class Comment {
     private Long id;
     private String text;
     private String author;
+    private Long postId;
 
     @Override
     public String toString() {
@@ -26,6 +27,7 @@ public class Comment {
                 "id=" + id +
                 ", text='" + text + '\'' +
                 ", author='" + author + '\'' +
+                ", postId='" + postId + '\'' +
                 '}';
     }
 

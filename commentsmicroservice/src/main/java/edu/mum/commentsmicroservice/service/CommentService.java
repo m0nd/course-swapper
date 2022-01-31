@@ -44,4 +44,10 @@ public class CommentService implements ICommentService {
         return commentDao.findCommentByAuthor(author);
 
     }
+
+    @Override
+    public List<Comment> findCommentByPostId(Long id){
+        return commentDao.findCommentByPostId(id);
+
+    }
 }

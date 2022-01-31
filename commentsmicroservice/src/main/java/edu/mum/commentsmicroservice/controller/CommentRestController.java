@@ -43,8 +43,10 @@ public class CommentRestController {
     @GetMapping("/comments/author/{author}")
     public List<Comment> getAllCommentsByAuthor(@PathVariable String author) {
         return commentService.getAllCommentsByAuthor(author);
-
     }
 
-
+    @GetMapping("/comments/post/{postId}")
+    public List<Comment> getAllCommentsByPost(@PathVariable Long postId) {
+        return commentService.findCommentByPostId(postId);
+    }
 }

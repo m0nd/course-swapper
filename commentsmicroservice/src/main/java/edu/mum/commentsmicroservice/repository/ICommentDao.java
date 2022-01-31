@@ -9,5 +9,7 @@ import java.util.List;
 public interface ICommentDao extends JpaRepository<Comment, Long> {
 
     @Query("select c from Comment c where c.author like %?1")
-    public List<Comment> findCommentByAuthor(String author);
+    List<Comment> findCommentByAuthor(String author);
+
+    List<Comment> findCommentByPostId(Long id);
 }

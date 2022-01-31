@@ -12,5 +12,6 @@ public interface ICommentService {
     public void update(Comment comment);
     public void delete(Long id);
     public List<Comment> getAllCommentsByAuthor(String author);
+    public List<Comment> findCommentByPostId(Long id);
 
 }
