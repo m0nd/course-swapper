@@ -17,6 +17,16 @@ public class CommentController {
         return commentService.getAll();
     }
 
+    @GetMapping("/comments/post/{postId}")
+    public List<Comment> getAllCommentsByPost(@PathVariable Long postId) {
+        return commentService.findCommentByPostId(postId);
+    }
+
+    @GetMapping("/comments/author/{author}")
+    public List<Comment> getAllCommentsByAuthor(@PathVariable String author) {
+        return commentService.getAllCommentsByAuthor(author);
+    }
+
     @GetMapping("/comments/{id}")
     public Comment get(@PathVariable Long id){
         return commentService.get(id);
