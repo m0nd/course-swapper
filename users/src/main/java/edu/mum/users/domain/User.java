@@ -5,6 +5,7 @@ import lombok.*;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
 
 @NoArgsConstructor
 @Getter
@@ -15,8 +16,8 @@ public class User {
     @Id
     @GeneratedValue
     private Long id;
+    @NotBlank
     private String name;
-    //private boolean isAuthor
 
     public User(String name) {
         this.name = name;
