@@ -5,6 +5,7 @@ import edu.mum.commentsmicroservice.domain.Comment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @RestController
@@ -25,12 +26,12 @@ public class CommentRestController {
     }
 
     @PostMapping("/comments")
-    public void add(@RequestBody Comment comment) {
+    public void add(@RequestBody @Valid Comment comment) {
         commentService.addComment(comment);
 
     }
     @PutMapping("/comments/{id}")
-    public void update(@PathVariable Long id, @RequestBody Comment comment){
+    public void update(@PathVariable Long id, @RequestBody @Valid Comment comment){
         if (id != comment.getId()) { throw new IllegalArgumentException(); }
         commentService.update(comment);
     }
